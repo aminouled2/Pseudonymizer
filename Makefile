@@ -1,6 +1,6 @@
 CC     = cc
 CFLAGS = -Wall -Wextra -std=c11
-TARGET = hello
+TARGET = pseudonymizer
 
 $(TARGET): main.c
 	$(CC) $(CFLAGS) -o $@ $<
