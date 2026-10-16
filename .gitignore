@@ -1,0 +1,4 @@
+hello
+*.o
+data/mappings.csv
+.DS_Store
