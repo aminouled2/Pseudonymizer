@@ -1,12 +1,12 @@
-CC     = cc
-CFLAGS = -Wall -Wextra -std=c11
-TARGET = pseudonymizer
+HCC      ?= hcc
+HCCFLAGS ?=
+TARGET   = pseudonymizer
 
-$(TARGET): main.c
-	$(CC) $(CFLAGS) -o $@ $<
+$(TARGET): main.hc src/name_generate.hc
+	$(HCC) $(HCCFLAGS) -o $@ $<
 
 run: $(TARGET)
-	./$(TARGET)
+	./$(TARGET) $(ARGS)
 
 clean:
 	rm -f $(TARGET)
