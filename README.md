@@ -1,6 +1,6 @@
 # work in progress lol
 
-were you ever too lazy to work on a document yourself, but also couldnt upload it to some weird AI to do your work for you??
+were you ever too lazy to work on a document yourself, but also couldnt upload it to some weird AI to do your work for you because it contains names, addresses and other info that u dont want to end up sold on the dark web??
 
 or wanted to share a document with someone, without all the personal information on there?!
 
