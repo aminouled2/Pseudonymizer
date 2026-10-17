@@ -3,7 +3,14 @@ U8 *fopen(U8 *path, U8 *mode);
 U8 *fgets(U8 *buffer, I64 size, U8 *stream);
 I64 fclose(U8 *stream);
 
+#include "src/name_generate.hc"
+
 U0 Main(U64 argc, U8 *argv[]) {
+    U8 name[256];
+    U8 *generatedName = GenerateName(name, sizeof(name));
+    if (generatedName != 0) {
+        printf("%s\n", generatedName);
+    }
   if (argc < 3) {
         printf("Usage: %s (--s | --swap | --r | --restore) <file>\n", argv[0]);
         return;
